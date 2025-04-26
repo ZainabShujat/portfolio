@@ -68,3 +68,14 @@ a:hover {
     background: #eef2f7;
   }
   
+  #projects-skills {
+    margin-top: 2rem;
+}
+
+#projects, #skills {
+    margin-bottom: 2rem;
+}
+
+.project {
+    margin-bottom: 1rem;
+}
