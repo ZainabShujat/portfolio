@@ -6,7 +6,7 @@ A modern, minimalist portfolio website showcasing development projects, writing,
 
 ## 🌐 Live Site
 
-[View Portfolio](https://your-portfolio-url.vercel.app)
+[View Portfolio](https://zainabshujat.vercel.app)
 
 ## ✨ Features
 

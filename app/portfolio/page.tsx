@@ -3,22 +3,14 @@ import Link from 'next/link'
 export default function Portfolio() {
   const projects = [
     {
-      title: 'SibsLove',
-      category: 'Tools for Humans',
-      description: 'Built with Base44. Originally created exclusively as a gift for my sister, SibsLove is a deeply personalized web app designed as a "digital hug" and supportive companion. Features include customizable onboarding quiz, journaling space, mood tracker, Pomodoro study corner, and playful comfort tabs.',
-      tagline: 'When you need someone to listen',
-      tech: ['React', 'Base44', 'UX Design', 'Emotional Design'],
-      year: 'Aug 2025',
-      color: 'pink',
-    },
-    {
-      title: 'PennyPath',
-      category: 'Tools for Humans',
-      description: 'A simple, beginner-friendly personal finance web app built with Base44, designed to help students and freelancers track income, expenses, and goals without jargon or judgment. Features include plain-language categories, recurring rules, monthly summaries, goal setting, and CSV export.',
-      tagline: 'Finance without the shame',
-      tech: ['Base44', 'HTML', 'CSS', 'JavaScript', 'React'],
-      year: 'May 2025 - Jun 2025',
-      color: 'purple',
+      title: 'Notes From a B.Tech Brain',
+      category: 'Worlds & Ideas',
+      description: 'Built a fully functional, multi-page blog platform hosting 50+ newsletter editions. Features custom homepage with category sections, mobile-responsive design, optimized navigation for long-form content, and SEO-ready structure. Serves 13-15 average engagement users/day with 40k+ impressions.',
+      tagline: 'Thinking out loud',
+      tech: ['HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'Vercel'],
+      year: 'Sep 2025 - Dec 2025',
+      color: 'orange',
+      link: 'https://btechbrain.vercel.app/',
     },
     {
       title: 'CareerIQ',
@@ -28,15 +20,7 @@ export default function Portfolio() {
       tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'REST APIs'],
       year: '2025',
       color: 'blue',
-    },
-    {
-      title: 'Notes From a B.Tech Brain',
-      category: 'Worlds & Ideas',
-      description: 'Built a fully functional, multi-page blog platform hosting 50+ newsletter editions. Features custom homepage with category sections, mobile-responsive design, optimized navigation for long-form content, and SEO-ready structure. Serves 13-15 average engagement users/day with 40k+ impressions.',
-      tagline: 'Thinking out loud',
-      tech: ['HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'Vercel'],
-      year: 'Sep 2025 - Dec 2025',
-      color: 'orange',
+      link: 'https://careeriq-ten.vercel.app/',
     },
     {
       title: 'Sentiment Analysis',
@@ -46,6 +30,27 @@ export default function Portfolio() {
       tech: ['Project Management', 'pandas', 'Python', 'NLP', 'Machine Learning'],
       year: 'Jul 2025 - Aug 2025',
       color: 'teal',
+      link: 'https://zainab-sentiment-analysis.streamlit.app/',
+    },
+    {
+      title: 'PennyPath',
+      category: 'Tools for Humans',
+      description: 'A simple, beginner-friendly personal finance web app built with Base44, designed to help students and freelancers track income, expenses, and goals without jargon or judgment. Features include plain-language categories, recurring rules, monthly summaries, goal setting, and CSV export.',
+      tagline: 'Finance without the shame',
+      tech: ['Base44', 'HTML', 'CSS', 'JavaScript', 'React'],
+      year: 'May 2025 - Jun 2025',
+      color: 'purple',
+      link: 'https://penny-path-34bd8a3e.base44.app/',
+    },
+    {
+      title: 'SibsLove',
+      category: 'Tools for Humans',
+      description: 'Built with Base44. Originally created exclusively as a gift for my sister, SibsLove is a deeply personalized web app designed as a "digital hug" and supportive companion. Features include customizable onboarding quiz, journaling space, mood tracker, Pomodoro study corner, and playful comfort tabs.',
+      tagline: 'When you need someone to listen',
+      tech: ['React', 'Base44', 'UX Design', 'Emotional Design'],
+      year: 'Aug 2025',
+      color: 'pink',
+      link: 'https://sibs-love-068d4e42.base44.app/',
     },
     {
       title: 'Suika Lite',
@@ -55,6 +60,7 @@ export default function Portfolio() {
       tech: ['Matter.js', 'p5.js', 'JavaScript', 'Physics Engine'],
       year: 'Oct 2025',
       color: 'green',
+      link: 'https://zainabshujat.github.io/Suika-Lite/',
     },
   ]
 
@@ -119,9 +125,9 @@ export default function Portfolio() {
               </p>
               <h3 className="font-bold text-black mb-3">Contact</h3>
               <p className="text-sm">
-                <a href="mailto:your.email@example.com" className="underline hover:no-underline">your.email@example.com</a><br/>
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">GitHub</a> · 
-                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline ml-2">LinkedIn</a>
+                <a href="mailto:zainabshujatali@gmail.com" className="underline hover:no-underline">zainabshujatali@gmail.com</a><br/>
+                <a href="https://github.com/ZainabShujat" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">GitHub</a> · 
+                <a href="https://www.linkedin.com/in/zainab-shujat-web-developer/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline ml-2">LinkedIn</a>
               </p>
             </div>
           </div>
@@ -160,10 +166,21 @@ export default function Portfolio() {
                     </div>
                   </div>
                   <div className="flex flex-col justify-between">
-                    <div className="text-sm text-gray-600">
+                    <div className="text-sm text-gray-600 mb-4">
                       <p className="font-mono">Year: {project.year}</p>
                       <p className="font-mono">Status: Live</p>
                     </div>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-black text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition-colors w-fit"
+                    >
+                      View Live
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </div>

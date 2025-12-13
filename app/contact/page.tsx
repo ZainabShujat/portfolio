@@ -31,10 +31,10 @@ export default function Contact() {
                 Email
               </p>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:zainabshujatali@gmail.com"
                 className="text-2xl sm:text-3xl font-bold text-white hover:text-purple-400 transition-colors duration-200 break-all"
               >
-                your.email@example.com
+                zainabshujatali@gmail.com
               </a>
             </div>
 
@@ -45,7 +45,7 @@ export default function Contact() {
               </p>
               <div className="space-y-4">
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/ZainabShujat"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between group text-white hover:text-gray-400 transition-colors duration-200"
@@ -56,7 +56,7 @@ export default function Contact() {
                   </svg>
                 </a>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/zainab-shujat-web-developer/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between group text-white hover:text-gray-400 transition-colors duration-200"

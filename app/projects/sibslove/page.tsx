@@ -1,7 +1,50 @@
+'use client'
+
+import { useState, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import Navigation from '@/components/Navigation'
 
 export default function SibsLove() {
+  const images = [
+    { src: '/images/projects/sibslove/hero.png', alt: 'SibsLove app interface showing personalized dashboard' },
+    // Add more images as you create them:
+     { src: '/images/projects/sibslove/feature-1.png', alt: 'Feature description' },
+    { src: '/images/projects/sibslove/feature-2.png', alt: 'Feature description' },
+  { src: '/images/projects/sibslove/feature-3.png', alt: 'Feature description' },
+  { src: '/images/projects/sibslove/feature-4.png', alt: 'Feature description' },
+  ]
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const touchStartX = useRef(0)
+  const touchEndX = useRef(0)
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % images.length)
+  }
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length)
+  }
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX
+  }
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.touches[0].clientX
+  }
+
+  const handleTouchEnd = () => {
+    if (touchStartX.current - touchEndX.current > 50) {
+      // Swiped left - next image
+      nextImage()
+    } else if (touchEndX.current - touchStartX.current > 50) {
+      // Swiped right - previous image
+      prevImage()
+    }
+  }
+
   return (
     <div className="min-h-screen bg-black text-white">
       <Navigation />
@@ -37,15 +80,81 @@ export default function SibsLove() {
             </p>
           </div>
 
-          {/* Preview Section */}
+          {/* Preview Section with Gallery */}
           <section className="mb-12">
-            <div className="h-[400px] bg-gradient-to-br from-pink-900/20 to-rose-900/20 border border-white/10 rounded-2xl flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-gray-400 text-lg mb-4">Preview coming soon</p>
-                <p className="text-sm text-gray-500 font-mono">A space to be held</p>
+            <div 
+              className="relative h-[400px] bg-gradient-to-br from-pink-900/20 to-rose-900/20 border border-white/10 rounded-2xl overflow-hidden group cursor-grab active:cursor-grabbing"
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+            >
+              <div 
+                className="flex h-full transition-transform duration-500 ease-out"
+                style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
+              >
+                {images.map((image, index) => (
+                  <div key={index} className="relative min-w-full h-full flex-shrink-0">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-contain"
+                      priority={index === 0}
+                    />
+                  </div>
+                ))}
               </div>
+              
+              {/* Navigation Arrows - Only show if more than 1 image */}
+              {images.length > 1 && (
+                <>
+                  {/* Previous Button */}
+                  <button
+                    onClick={prevImage}
+                    className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/60 hover:bg-black/80 border border-white/20 rounded-full flex items-center justify-center transition-all duration-200 opacity-0 group-hover:opacity-100 z-10"
+                    aria-label="Previous image"
+                  >
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </button>
+
+                  {/* Next Button */}
+                  <button
+                    onClick={nextImage}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-black/60 hover:bg-black/80 border border-white/20 rounded-full flex items-center justify-center transition-all duration-200 opacity-0 group-hover:opacity-100 z-10"
+                    aria-label="Next image"
+                  >
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+
+                  {/* Image Counter */}
+                  <div className="absolute bottom-4 right-4 px-3 py-1 bg-black/60 border border-white/20 rounded-full text-xs font-mono transition-opacity duration-200">
+                    {currentImageIndex + 1} / {images.length}
+                  </div>
+
+                  {/* Dot Indicators */}
+                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                    {images.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setCurrentImageIndex(index)}
+                        className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                          index === currentImageIndex 
+                            ? 'bg-pink-400 w-6' 
+                            : 'bg-white/40 hover:bg-white/60'
+                        }`}
+                        aria-label={`Go to image ${index + 1}`}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
           </section>
+          
 
           {/* Content Grid */}
           <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
