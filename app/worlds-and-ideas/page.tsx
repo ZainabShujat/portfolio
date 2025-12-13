@@ -1,12 +1,14 @@
 'use client'
 
 import Link from 'next/link'
+import Navigation from '@/components/Navigation'
 
 export default function WorldsAndIdeas() {
   return (
     <div className="min-h-screen bg-black text-white">
+      <Navigation />
       {/* Hero */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 py-12">
+      <section className="relative min-h-screen flex items-center justify-center px-6 py-12 pt-[140px]">
         <div className="absolute inset-0 bg-gradient-to-b from-orange-950/20 via-amber-950/10 to-black"></div>
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           <div className="mb-8">

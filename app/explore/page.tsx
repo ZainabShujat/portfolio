@@ -38,7 +38,7 @@ export default function Home() {
     <div className="min-h-screen bg-black text-white">
       <Navigation />
       {/* Massive Typography Hero */}
-      <section className="px-6 sm:px-8 lg:px-16 py-8 pt-[90px]">
+      <section className="px-6 sm:px-8 lg:px-16 py-8 pt-[140px]">
         <div className="max-w-7xl mx-auto">
           <Link 
             href="/" 

@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-black text-white">
       <Navigation />
-      <div className="px-6 sm:px-8 lg:px-16 py-12 lg:py-16">
+      <div className="px-6 sm:px-8 lg:px-16 py-12 lg:py-16 pt-[140px]">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="mb-12">

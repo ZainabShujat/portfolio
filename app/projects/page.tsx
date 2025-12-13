@@ -9,7 +9,7 @@ export default function Projects() {
     <div className="min-h-screen bg-black text-white">
       <Navigation />
       {/* Immersive Hero - Welcome to the Work */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 py-12 pt-[90px]">
+      <section className="relative min-h-screen flex items-center justify-center px-6 py-12 pt-[140px]">
         <div className="absolute inset-0 bg-gradient-to-b from-purple-950/20 via-black to-black"></div>
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           <div className="mb-8">
