@@ -2,8 +2,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { name: 'GitHub', href: 'https://github.com' },
-    { name: 'LinkedIn', href: 'https://linkedin.com' },
+    { name: 'GitHub', href: 'https://github.com/ZainabShujat' },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/zainab-shujat-web-developer' },
+    { name: 'LinkedIn Page', href: 'https://www.linkedin.com/company/notes-from-a-b-tech-brain/' },
     { name: 'Email', href: 'mailto:zainabshujatali@gmail.com' },
   ]
 
