@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 
-export default function PennyPath() {
+export default function SentimentAnalysis() {
   return (
     <div className="min-h-screen bg-black text-white">
       <Navigation />
@@ -21,28 +21,28 @@ export default function PennyPath() {
           {/* Header */}
           <div className="mb-12">
             <div className="mb-4">
-              <span className="inline-block px-4 py-2 bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-mono uppercase tracking-wider rounded-full">
-                Tools for Humans
+              <span className="inline-block px-4 py-2 bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-mono uppercase tracking-wider rounded-full">
+                Play & Experiment
               </span>
             </div>
             <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter mb-6">
-              PennyPath
+              Sentiment<br />Analysis
             </h1>
-            <p className="text-2xl sm:text-3xl text-purple-400 font-medium mb-8">
-              Finance without the shame
+            <p className="text-2xl sm:text-3xl text-teal-400 font-medium mb-8">
+              Understanding what people feel
             </p>
             <p className="text-xl text-gray-400 max-w-3xl leading-relaxed">
-              A beginner-friendly personal finance app that removes judgment from money tracking. 
-              No jargon. No guilt. Just clarity.
+              A tool that analyzes emotional patterns in text, helping understand sentiment and tone. 
+              Built to make emotional intelligence more accessible through natural language processing.
             </p>
           </div>
 
           {/* Preview Section */}
           <section className="mb-12">
-            <div className="h-[400px] bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-white/10 rounded-2xl flex items-center justify-center">
+            <div className="h-[400px] bg-gradient-to-br from-teal-900/20 to-blue-900/20 border border-white/10 rounded-2xl flex items-center justify-center">
               <div className="text-center">
                 <p className="text-gray-400 text-lg mb-4">Preview coming soon</p>
-                <p className="text-sm text-gray-500 font-mono">Your money, your terms</p>
+                <p className="text-sm text-gray-500 font-mono">Decoding emotion beneath words</p>
               </div>
             </div>
           </section>
@@ -54,61 +54,47 @@ export default function PennyPath() {
               {/* What It Does */}
               <section>
                 <h2 className="text-3xl sm:text-4xl font-black tracking-tight mb-6">
-                  What It Does
+                  Project Overview
                 </h2>
                 <div className="space-y-4 text-lg text-gray-300 leading-relaxed">
                   <p>
-                    A simple, beginner-friendly personal finance web app built with Base44, designed to help students 
-                    and freelancers track income, expenses, and goals without jargon or judgment.
+                    This project involves analysing customer reviews from platforms such as Amazon and Flipkart to determine 
+                    whether the sentiment expressed is positive, negative, or neutral.
                   </p>
                   <p>
-                    Inspired by how complicated finance tools can feel, I built PennyPath to make money management 
-                    friendlier and more human — because even budgeting deserves good design.
+                    I use natural language processing (NLP) techniques such as tokenisation, stopword removal, stemming, and 
+                    TF-IDF vectorisation to preprocess the text data, and then train a Naive Bayes classifier to categorise 
+                    the reviews and evaluate the model using a confusion matrix, accuracy, precision, and recall.
+                  </p>
+                  <p>
+                    This project introduced me to text classification, NLP, and basic machine learning.
                   </p>
                 </div>
               </section>
 
-              {/* Features */}
+              {/* Details */}
               <section className="border-t border-white/10 pt-12">
                 <h2 className="text-3xl sm:text-4xl font-black tracking-tight mb-6">
-                  Features
+                  Implementation
                 </h2>
                 <ul className="space-y-3 text-base text-gray-300">
                   <li className="flex items-start gap-3">
-                    <span className="text-purple-400 text-xl">•</span>
-                    <span>Add income and expenses with plain-language categories</span>
+                    <span className="text-teal-400 text-xl">•</span>
+                    <span>Processed thousands of data points from e-commerce datasets</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-purple-400 text-xl">•</span>
-                    <span>Recurring rules for salary and rent</span>
+                    <span className="text-teal-400 text-xl">•</span>
+                    <span>Achieved model accuracy of ~87%</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-purple-400 text-xl">•</span>
-                    <span>Monthly summaries and leftover tracking</span>
+                    <span className="text-teal-400 text-xl">•</span>
+                    <span>Used confusion matrix, precision, and recall metrics for validation</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-purple-400 text-xl">•</span>
-                    <span>Goal setting for savings (e.g. laptop fund)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-purple-400 text-xl">•</span>
-                    <span>Friendly tax estimate tool (IN context)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-purple-400 text-xl">•</span>
-                    <span>CSV export for personal data ownership</span>
+                    <span className="text-teal-400 text-xl">•</span>
+                    <span>Hands-on experience with pandas data handling and ML pipelines</span>
                   </li>
                 </ul>
-              </section>
-
-              {/* Focus Areas */}
-              <section className="border-t border-white/10 pt-12">
-                <h2 className="text-3xl sm:text-4xl font-black tracking-tight mb-6">
-                  Focus Areas
-                </h2>
-                <p className="text-base text-gray-300 leading-relaxed">
-                  UX design, user empathy, product thinking, and front-end development.
-                </p>
               </section>
             </div>
 
@@ -120,7 +106,7 @@ export default function PennyPath() {
                   Tech Stack
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {['Base44', 'HTML', 'CSS', 'JavaScript', 'React', 'React Native', 'Full-Stack Development', 'Generative Components', 'Generative Design'].map((tech) => (
+                  {['Project Management', 'pandas', 'Python', 'NLP', 'Machine Learning', 'Naive Bayes'].map((tech) => (
                     <span
                       key={tech}
                       className="px-3 py-1 bg-white/5 border border-white/10 text-gray-300 rounded-md text-sm"
@@ -136,7 +122,7 @@ export default function PennyPath() {
                 <h3 className="text-sm font-mono text-gray-500 mb-2 uppercase tracking-wider">
                   Timeline
                 </h3>
-                <p className="text-xl font-bold">May 2025 - Jun 2025</p>
+                <p className="text-xl font-bold">Jul 2025 - Aug 2025</p>
               </div>
 
               {/* Status */}
@@ -152,12 +138,12 @@ export default function PennyPath() {
 
               {/* CTA */}
               <a
-                href="https://penny-path-34bd8a3e.base44.app/"
+                href="https://zainab-sentiment-analysis.streamlit.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center px-6 py-4 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-lg transition-colors duration-200"
+                className="block w-full text-center px-6 py-4 bg-teal-600 hover:bg-teal-700 text-white font-bold rounded-lg transition-colors duration-200"
               >
-                View Live Project
+                View Live Demo
               </a>
             </div>
           </div>

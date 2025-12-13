@@ -1,85 +1,163 @@
 import Link from 'next/link'
+import Navigation from '@/components/Navigation'
 
 export default function SibsLove() {
   return (
-    <div className="min-h-screen px-6 sm:px-8 lg:px-12 pt-12 pb-12">
-      <div className="max-w-4xl mx-auto">
-        {/* Back Link */}
-        <Link 
-          href="/projects"
-          className="inline-flex items-center text-sm text-accent-600 hover:text-accent-700 mb-8 transition-colors duration-200"
-        >
-          <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-          Back to Projects
-        </Link>
+    <div className="min-h-screen bg-black text-white">
+      <Navigation />
+      <div className="px-6 sm:px-8 lg:px-16 py-12 lg:py-16">
+        <div className="max-w-6xl mx-auto">
+          {/* Back Link */}
+          <Link 
+            href="/projects"
+            className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-gray-400 hover:text-white mb-12 transition-colors duration-200"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back
+          </Link>
 
-        {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-5xl sm:text-6xl text-gray-900 mb-4 font-extrabold tracking-tight">
-            SibsLove
-          </h1>
-          <p className="text-xl text-gray-600 mb-6">
-            An emotional companion world
-          </p>
-          <div className="w-24 h-1.5 bg-accent-600"></div>
-        </div>
-
-        {/* Preview Section */}
-        <section className="mb-16">
-          <div className="aspect-video bg-gradient-to-br from-accent-100 via-accent-50 to-gray-50 rounded-xl border border-gray-200 flex items-center justify-center">
-            <p className="text-gray-400">Preview coming soon</p>
-          </div>
-        </section>
-
-        {/* Description */}
-        <section className="mb-12">
-          <h2 className="text-2xl text-gray-900 mb-4 font-semibold">About This Project</h2>
-          <div className="space-y-4 text-base text-gray-700 leading-relaxed">
-            <p>
-              A fully usable emotional companion web app designed as a warm, supportive presence — 
-              inspired by my sister's real-life struggles and the kind of comfort she needed.
-            </p>
-            <p>
-              I designed the emotional flows, pages, and prompts, using Base44 to generate a full-stack 
-              React app that feels like a gentle, reassuring companion rather than a therapist.
-            </p>
-          </div>
-        </section>
-
-        {/* Tech Stack */}
-        <section className="mb-12">
-          <h2 className="text-2xl text-gray-900 mb-4 font-semibold">Built With</h2>
-          <div className="flex flex-wrap gap-3">
-            {['React (via Base44)', 'Prompt Design', 'UX Flow Design'].map((tech) => (
-              <span
-                key={tech}
-                className="px-4 py-2 bg-gray-50 text-gray-700 border border-gray-200 rounded-lg text-sm"
-              >
-                {tech}
+          {/* Header */}
+          <div className="mb-12">
+            <div className="mb-4">
+              <span className="inline-block px-4 py-2 bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-mono uppercase tracking-wider rounded-full">
+                Tools for Humans
               </span>
-            ))}
+            </div>
+            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter mb-6">
+              SibsLove
+            </h1>
+            <p className="text-2xl sm:text-3xl text-pink-400 font-medium mb-8">
+              When you need someone to listen
+            </p>
+            <p className="text-xl text-gray-400 max-w-3xl leading-relaxed">
+              An emotional companion app designed as a warm, supportive presence. Not therapy. 
+              Not advice. Just comfort when you need it.
+            </p>
           </div>
-        </section>
 
-        {/* Links */}
-        <section className="pt-8 border-t border-gray-200">
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-3 bg-accent-600 text-white text-base font-medium rounded-lg hover:bg-accent-700 transition-colors duration-200"
-            >
-              Enter this world
-              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
+          {/* Preview Section */}
+          <section className="mb-12">
+            <div className="h-[400px] bg-gradient-to-br from-pink-900/20 to-rose-900/20 border border-white/10 rounded-2xl flex items-center justify-center">
+              <div className="text-center">
+                <p className="text-gray-400 text-lg mb-4">Preview coming soon</p>
+                <p className="text-sm text-gray-500 font-mono">A space to be held</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Content Grid */}
+          <div className="grid lg:grid-cols-3 gap-12 lg:gap-16">
+            {/* Main Content */}
+            <div className="lg:col-span-2 space-y-12">
+              {/* What It Does */}
+              <section>
+                <h2 className="text-3xl sm:text-4xl font-black tracking-tight mb-6">
+                  What It Does
+                </h2>
+                <div className="space-y-4 text-lg text-gray-300 leading-relaxed">
+                  <p>
+                    Built with Base44. Originally created exclusively as a gift for my sister, SibsLove is a deeply 
+                    personalized web app designed as a "digital hug" and supportive companion.
+                  </p>
+                  <p>
+                    Focused on user-centered design and emotional experience, combining functional tools with warmth, 
+                    encouragement, and personalization.
+                  </p>
+                </div>
+              </section>
+
+              {/* Features */}
+              <section className="border-t border-white/10 pt-12">
+                <h2 className="text-3xl sm:text-4xl font-black tracking-tight mb-6">
+                  Features
+                </h2>
+                <ul className="space-y-3 text-base text-gray-300">
+                  <li className="flex items-start gap-3">
+                    <span className="text-pink-400 text-xl">•</span>
+                    <span>Customizable onboarding quiz (nickname, career, age, etc.)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-pink-400 text-xl">•</span>
+                    <span>Journaling space and mood tracker</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-pink-400 text-xl">•</span>
+                    <span>Pomodoro study corner and task management</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-pink-400 text-xl">•</span>
+                    <span>Playful comfort tabs like Cry With Me, My Hug to You, and Advice Oracle</span>
+                  </li>
+                </ul>
+              </section>
+
+              {/* Focus */}
+              <section className="border-t border-white/10 pt-12">
+                <h2 className="text-3xl sm:text-4xl font-black tracking-tight mb-6">
+                  Development Journey
+                </h2>
+                <p className="text-base text-gray-300 leading-relaxed">
+                  Demonstrated ability to take a concept from idea — working prototype, showcasing skills in app design, 
+                  UX thinking, and rapid prototyping.
+                </p>
+              </section>
+            </div>
+
+            {/* Sidebar Details */}
+            <div className="space-y-10">
+              {/* Tech Stack */}
+              <div>
+                <h3 className="text-sm font-mono text-gray-500 mb-4 uppercase tracking-wider">
+                  Tech Stack
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {['React', 'Base44', 'UX Design', 'Emotional Design'].map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 bg-white/5 border border-white/10 text-gray-300 rounded-md text-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Year */}
+              <div>
+                <h3 className="text-sm font-mono text-gray-500 mb-2 uppercase tracking-wider">
+                  Timeline
+                </h3>
+                <p className="text-xl font-bold">Aug 2025 - Aug 2025</p>
+              </div>
+
+              {/* Status */}
+              <div>
+                <h3 className="text-sm font-mono text-gray-500 mb-2 uppercase tracking-wider">
+                  Status
+                </h3>
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-green-500/10 border border-green-500/20 rounded-full">
+                  <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></div>
+                  <span className="text-sm text-green-400 font-mono">Live</span>
+                </div>
+              </div>
+
+              {/* CTA */}
+              <a
+                href="https://sibs-love-068d4e42.base44.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center px-6 py-4 bg-pink-600 hover:bg-pink-700 text-white font-bold rounded-lg transition-colors duration-200"
+              >
+                View Live Project
+              </a>
+            </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
   )
 }
+
+

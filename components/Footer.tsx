@@ -8,28 +8,31 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="border-t border-gray-100 mt-32">
-      <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-16">
+    <footer className="border-t border-white/10 bg-black text-white">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 py-16">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           {/* Info */}
-          <div className="space-y-2">
-            <p className="text-sm text-gray-500">
-              © {currentYear} Your Name
+          <div className="space-y-3">
+            <p className="text-xl font-black tracking-tight">
+              ZS
             </p>
-            <p className="text-sm text-gray-400">
-              Designed & built with care
+            <p className="text-sm text-gray-500">
+              © {currentYear} Zainab Shujat
+            </p>
+            <p className="text-sm text-gray-600">
+              Built with intention
             </p>
           </div>
 
           {/* Social Links */}
-          <div className="flex gap-6">
+          <div className="flex gap-8">
             {socialLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-gray-500 hover:text-accent-600 transition-all duration-200 hover:-translate-y-0.5"
+                className="text-sm font-bold uppercase tracking-wider text-gray-400 hover:text-white transition-colors duration-200"
                 aria-label={link.name}
               >
                 {link.name}

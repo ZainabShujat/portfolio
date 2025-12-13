@@ -4,11 +4,11 @@ import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], weight: ['300', '400', '500', '700', '900'] })
 
 export const metadata: Metadata = {
-  title: 'Your Name — Portfolio',
-  description: 'Developer and designer creating thoughtful digital experiences',
+  title: 'Zainab Shujat — Creative Developer',
+  description: 'Building worlds that work. Developer, designer, and maker of thoughtful things.',
 }
 
 export default function RootLayout({
@@ -17,9 +17,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="antialiased">
-      <body className={`${inter.className} bg-white text-gray-900`}>
-        <Navigation />
+    <html lang="en" className="antialiased scroll-smooth">
+      <body className={`${inter.className} bg-black text-white`}>
         <main className="min-h-screen">{children}</main>
         <Footer />
       </body>
