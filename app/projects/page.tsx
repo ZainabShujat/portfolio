@@ -379,20 +379,20 @@ export default function Projects() {
                 </p>
                 <div className="space-y-4 text-sm sm:text-base text-gray-400 leading-relaxed mb-8">
                   <p>
-                    A long-running project spanning multiple platforms—LinkedIn newsletter for weekly thoughts, 
-                    LinkedIn page for community, and a blog website that archives everything. The messy, 
+                    A long-running project spanning multiple platforms—<a href="https://www.linkedin.com/newsletters/7319367808327303168/" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 underline">LinkedIn newsletter</a> for weekly thoughts, 
+                    <a href="https://www.linkedin.com/company/notes-from-a-b-tech-brain/" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 underline">LinkedIn page</a> for community, and a <a href="https://btechbrain.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 underline">blog website</a> that archives everything. The messy, 
                     unpolished process of building and learning in public.
                   </p>
                   <div className="flex flex-wrap gap-3 py-2">
-                    <span className="px-3 py-1 bg-orange-950/30 border border-orange-500/20 text-orange-300/80 text-xs font-mono rounded">
+                    <a href="https://www.linkedin.com/newsletters/7319367808327303168/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-orange-950/30 border border-orange-500/20 text-orange-300/80 text-xs font-mono rounded hover:bg-orange-900/30 transition-colors">
                       LinkedIn Newsletter
-                    </span>
-                    <span className="px-3 py-1 bg-orange-950/30 border border-orange-500/20 text-orange-300/80 text-xs font-mono rounded">
+                    </a>
+                    <a href="https://www.linkedin.com/company/notes-from-a-b-tech-brain/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-orange-950/30 border border-orange-500/20 text-orange-300/80 text-xs font-mono rounded hover:bg-orange-900/30 transition-colors">
                       LinkedIn Page
-                    </span>
-                    <span className="px-3 py-1 bg-orange-950/30 border border-orange-500/20 text-orange-300/80 text-xs font-mono rounded">
+                    </a>
+                    <a href="https://btechbrain.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-3 py-1 bg-orange-950/30 border border-orange-500/20 text-orange-300/80 text-xs font-mono rounded hover:bg-orange-900/30 transition-colors">
                       Blog Archive
-                    </span>
+                    </a>
                   </div>
                   <p className="text-orange-400/60 italic text-sm">
                     "Not polished. Not perfect. Just honest reflections on building, learning, 
@@ -529,7 +529,7 @@ export default function Projects() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
-              href="/"
+              href="/explore"
               className="inline-flex items-center gap-2 px-8 py-4 border border-white/20 hover:bg-white/5 text-white font-bold rounded-lg transition-all duration-200"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>

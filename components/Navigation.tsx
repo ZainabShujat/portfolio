@@ -21,7 +21,7 @@ export default function Navigation() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16">
         <div className="flex justify-between items-center py-6">
           {/* Logo/Name */}
@@ -73,19 +73,41 @@ export default function Navigation() {
           </button>
         </div>
 
-        {/* Mobile Navigation - Full Screen Overlay */}
-        {isOpen && (
-          <div className="md:hidden fixed inset-0 top-[73px] bg-black z-40">
-            <div className="flex flex-col items-center justify-center h-full gap-12 px-6">
+        {/* Mobile Navigation - Slide from Right */}
+        <>
+          {/* Side Panel */}
+          <div className={`md:hidden fixed top-0 right-0 h-full w-64 bg-black border-l border-purple-500/20 z-50 transform transition-transform duration-300 ease-in-out ${
+            isOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}>
+            {/* Close Button */}
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-6 right-6 text-white hover:text-purple-400 transition-colors duration-200 focus:outline-none"
+              aria-label="Close menu"
+            >
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            <div className="flex flex-col pt-24 px-8 gap-1">
               {links.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`text-3xl font-black uppercase tracking-tight transition-colors duration-200 ${
+                  className={`text-sm font-medium uppercase tracking-wider py-3 transition-colors duration-200 ${
                     isActive(link.href)
                       ? 'text-white'
-                      : 'text-gray-500 hover:text-white'
+                      : 'text-gray-400 hover:text-white'
                   }`}
                 >
                   {link.label}
@@ -93,7 +115,7 @@ export default function Navigation() {
               ))}
             </div>
           </div>
-        )}
+        </>
       </div>
     </nav>
   )

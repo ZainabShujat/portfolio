@@ -52,27 +52,27 @@ export default function WorldsAndIdeas() {
                 </p>
                 <div className="space-y-6 text-sm sm:text-base text-gray-400 leading-relaxed mb-8">
                   <p>
-                    A long-running project spanning multiple platforms—LinkedIn newsletter for weekly thoughts, 
-                    LinkedIn page for community, and a blog website that archives everything. The messy, 
+                    A long-running project spanning multiple platforms—<a href="https://www.linkedin.com/newsletters/7319367808327303168/" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 underline">LinkedIn newsletter</a> for weekly thoughts, 
+                    <a href="https://www.linkedin.com/company/notes-from-a-b-tech-brain/" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 underline">LinkedIn page</a> for community, and a <a href="https://btechbrain.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 underline">blog website</a> that archives everything. The messy, 
                     unpolished process of building and learning in public.
                   </p>
                   
                   <div className="grid sm:grid-cols-3 gap-4 py-4">
-                    <div className="p-5 bg-orange-950/20 border border-orange-500/20 rounded-xl hover:bg-orange-950/30 transition-colors duration-300">
+                    <a href="https://www.linkedin.com/newsletters/7319367808327303168/" target="_blank" rel="noopener noreferrer" className="p-5 bg-orange-950/20 border border-orange-500/20 rounded-xl hover:bg-orange-950/30 transition-colors duration-300">
                       <div className="text-orange-400/60 text-xs font-mono mb-2">Platform 01</div>
                       <p className="text-orange-300 font-medium">LinkedIn Newsletter</p>
                       <p className="text-gray-500 text-xs mt-1">Weekly thoughts</p>
-                    </div>
-                    <div className="p-5 bg-orange-950/20 border border-orange-500/20 rounded-xl hover:bg-orange-950/30 transition-colors duration-300">
+                    </a>
+                    <a href="https://www.linkedin.com/company/notes-from-a-b-tech-brain/" target="_blank" rel="noopener noreferrer" className="p-5 bg-orange-950/20 border border-orange-500/20 rounded-xl hover:bg-orange-950/30 transition-colors duration-300">
                       <div className="text-orange-400/60 text-xs font-mono mb-2">Platform 02</div>
                       <p className="text-orange-300 font-medium">LinkedIn Page</p>
                       <p className="text-gray-500 text-xs mt-1">Community hub</p>
-                    </div>
-                    <div className="p-5 bg-orange-950/20 border border-orange-500/20 rounded-xl hover:bg-orange-950/30 transition-colors duration-300">
+                    </a>
+                    <a href="https://btechbrain.vercel.app/" target="_blank" rel="noopener noreferrer" className="p-5 bg-orange-950/20 border border-orange-500/20 rounded-xl hover:bg-orange-950/30 transition-colors duration-300">
                       <div className="text-orange-400/60 text-xs font-mono mb-2">Platform 03</div>
                       <p className="text-orange-300 font-medium">Blog Archive</p>
                       <p className="text-gray-500 text-xs mt-1">Long-form writing</p>
-                    </div>
+                    </a>
                   </div>
                   
                   <p className="text-orange-400/60 italic text-sm">

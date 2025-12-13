@@ -70,7 +70,7 @@ export default function Newsletter() {
               Thinking out loud
             </p>
             <p className="text-xl text-gray-400 max-w-3xl leading-relaxed">
-              A 3-piece ecosystem spanning LinkedIn newsletter, LinkedIn page, and blog archive. 
+              A 3-piece ecosystem spanning <a href="https://www.linkedin.com/newsletters/7319367808327303168/" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 underline">LinkedIn newsletter</a>, <a href="https://www.linkedin.com/company/notes-from-a-b-tech-brain/" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 underline">LinkedIn page</a>, and <a href="https://btechbrain.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 underline">blog archive</a>. 
               The messy, unpolished process of building and learning in public.
             </p>
           </div>
@@ -161,7 +161,7 @@ export default function Newsletter() {
                   </p>
                   <p>
                     A 3-piece ecosystem spanning LinkedIn newsletter for weekly thoughts, LinkedIn page for community 
-                    engagement, and a blog website that archives everything.
+                    engagement, and a <a href="https://btechbrain.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 underline">blog website</a> that archives everything.
                   </p>
                 </div>
               </section>
@@ -259,15 +259,33 @@ export default function Newsletter() {
                 </div>
               </div>
 
-              {/* CTA */}
-              <a
-                href="https://btechbrain.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full text-center px-6 py-4 bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-lg transition-colors duration-200"
-              >
-                Read Archive
-              </a>
+              {/* CTA Buttons */}
+              <div className="space-y-3">
+                <a
+                  href="https://btechbrain.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center px-6 py-4 bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-lg transition-colors duration-200"
+                >
+                  Read Archive
+                </a>
+                <a
+                  href="https://www.linkedin.com/newsletters/7319367808327303168/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center px-6 py-4 bg-white/5 hover:bg-white/10 border border-white/20 text-white font-bold rounded-lg transition-colors duration-200"
+                >
+                  LinkedIn Newsletter
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/notes-from-a-b-tech-brain/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center px-6 py-4 bg-white/5 hover:bg-white/10 border border-white/20 text-white font-bold rounded-lg transition-colors duration-200"
+                >
+                  LinkedIn Page
+                </a>
+              </div>
             </div>
           </div>
         </div>

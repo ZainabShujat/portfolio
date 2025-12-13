@@ -11,6 +11,10 @@ export default function Portfolio() {
       year: 'Sep 2025 - Dec 2025',
       color: 'orange',
       link: 'https://btechbrain.vercel.app/',
+      additionalLinks: [
+        { label: 'LinkedIn Newsletter', url: 'https://www.linkedin.com/newsletters/7319367808327303168/' },
+        { label: 'LinkedIn Page', url: 'https://www.linkedin.com/company/notes-from-a-b-tech-brain/' },
+      ],
     },
     {
       title: 'CareerIQ',
@@ -170,17 +174,30 @@ export default function Portfolio() {
                       <p className="font-mono">Year: {project.year}</p>
                       <p className="font-mono">Status: Live</p>
                     </div>
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-black text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition-colors w-fit"
-                    >
-                      View Live
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                    </a>
+                    <div className="space-y-2">
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-black text-white text-sm font-medium rounded-lg hover:bg-gray-800 transition-colors w-fit"
+                      >
+                        View Live
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                      {project.additionalLinks && project.additionalLinks.map((link: any, i: number) => (
+                        <a
+                          key={i}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block text-sm text-gray-600 hover:text-black underline"
+                        >
+                          {link.label}
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -229,7 +246,7 @@ export default function Portfolio() {
                 <li>• Designing original newsletter banners, icons, and page visuals</li>
                 <li>• Managing a consistent posting schedule (daily/weekly) across LinkedIn and Medium</li>
                 <li>• Creating technical explainers on AI/ML topics with simplified diagrams and real-world parallels</li>
-                <li>• Developed and launched a dedicated LinkedIn Page in November 2025</li>
+                <li>• Developed and launched a dedicated <a href="https://www.linkedin.com/company/notes-from-a-b-tech-brain/" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">LinkedIn Page</a> in November 2025</li>
               </ul>
               <p className="text-sm text-gray-600 mt-3 italic">Focus: Writing, Technical Communication, AI/ML Simplification, UX for Content, Visual Design, Personal Branding</p>
             </div>
