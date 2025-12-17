@@ -3,6 +3,16 @@ import Link from 'next/link'
 export default function Portfolio() {
   const projects = [
     {
+      title: 'CareerIQ',
+      category: 'Tools for Humans',
+      description: 'Built a full-stack MERN career recommendation platform combining psychometric analysis, skill assessments, and rule-based AI insights. Features include 24-question personality assessment, weighted career-matching algorithm, interactive insights dashboard, and secure JWT authentication. Fully deployed in production.',
+      tagline: 'Clarity in career confusion',
+      tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'REST APIs'],
+      year: '2025',
+      color: 'blue',
+      link: 'https://careeriq-ten.vercel.app/',
+    },
+    {
       title: 'Notes From a B.Tech Brain',
       category: 'Worlds & Ideas',
       description: 'Built a fully functional, multi-page blog platform hosting 50+ newsletter editions. Features custom homepage with category sections, mobile-responsive design, optimized navigation for long-form content, and SEO-ready structure. Serves 13-15 average engagement users/day with 40k+ impressions.',
@@ -15,16 +25,6 @@ export default function Portfolio() {
         { label: 'LinkedIn Newsletter', url: 'https://www.linkedin.com/newsletters/7319367808327303168/' },
         { label: 'LinkedIn Page', url: 'https://www.linkedin.com/company/notes-from-a-b-tech-brain/' },
       ],
-    },
-    {
-      title: 'CareerIQ',
-      category: 'Tools for Humans',
-      description: 'Built a full-stack MERN career recommendation platform combining psychometric analysis, skill assessments, and rule-based AI insights. Features include 24-question personality assessment, weighted career-matching algorithm, interactive insights dashboard, and secure JWT authentication. Fully deployed in production.',
-      tagline: 'Clarity in career confusion',
-      tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'REST APIs'],
-      year: '2025',
-      color: 'blue',
-      link: 'https://careeriq-ten.vercel.app/',
     },
     {
       title: 'Sentiment Analysis',
