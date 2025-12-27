@@ -19,6 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="antialiased scroll-smooth">
+      <meta name="google-site-verification" content="8B-z-nY8ZpOg1qgralDyM2dsUQz73RRDfN0E7KS-7Nc" />
       <body className={`${inter.className} bg-black text-white`}>
         {/* Google Analytics */}
         <Script
