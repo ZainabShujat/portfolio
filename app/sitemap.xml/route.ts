@@ -47,7 +47,3 @@ ${urls.join('\n')}
     },
   });
 }
-
-git add app/sitemap.xml/route.ts
-git commit -m "Add dynamic sitemap"
-git push
