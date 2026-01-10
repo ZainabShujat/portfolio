@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -6,6 +8,11 @@ export default function Footer() {
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/zainab-shujat-web-developer' },
     { name: 'LinkedIn Page', href: 'https://www.linkedin.com/company/notes-from-a-b-tech-brain/' },
     { name: 'Email', href: 'mailto:zainabshujatali@gmail.com' },
+  ]
+
+  const navLinks = [
+    { name: 'About', href: '/about' },
+    { name: 'Contact', href: '/contact' },
   ]
 
   return (
@@ -25,8 +32,8 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Social Links */}
-          <div className="flex gap-8">
+          {/* Social and Nav Links */}
+          <div className="flex flex-wrap gap-8 items-center">
             {socialLinks.map((link) => (
               <a
                 key={link.name}
@@ -38,6 +45,16 @@ export default function Footer() {
               >
                 {link.name}
               </a>
+            ))}
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-sm font-bold uppercase tracking-wider text-gray-400 hover:text-white transition-colors duration-200"
+                aria-label={link.name}
+              >
+                {link.name}
+              </Link>
             ))}
           </div>
         </div>
