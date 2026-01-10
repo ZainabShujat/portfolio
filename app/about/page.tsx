@@ -119,11 +119,6 @@ export default function About() {
                     <p className="text-white font-bold text-sm">AI Intern</p>
                     <p className="text-gray-400 text-sm">IBM · Jul 2025 - Aug 2025</p>
                   </div>
-                  <div>
-                    <p className="text-white font-bold text-sm">Knowledge Builder</p>
-                    <p className="text-gray-400 text-sm">Smartly · Jan 2026 - Present</p>
-                  </div>
-                </div>
               </div>
 
               {/* Current Focus */}
