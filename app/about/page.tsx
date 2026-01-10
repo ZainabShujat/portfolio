@@ -100,16 +100,16 @@ export default function About() {
                 </h3>
                 <div className="space-y-4">
                   <div>
-                    <p className="text-white font-bold text-sm">Frontend Developer Intern</p>
-                    <p className="text-gray-400 text-sm">Unified Mentor · Oct 2025 - Jan 2026</p>
+                    <p className="text-white font-bold text-sm">Knowledge Builder</p>
+                    <p className="text-gray-400 text-sm">Smartly Creators Program · Jan 2026 - Present</p>
                   </div>
                   <div>
                     <p className="text-white font-bold text-sm">Creator & Author</p>
                     <p className="text-gray-400 text-sm">Notes From A B. Tech Brain · Apr 2025 - Present</p>
                   </div>
                   <div>
-                    <p className="text-white font-bold text-sm">Knowledge Builder</p>
-                    <p className="text-gray-400 text-sm">Smartly · Jan 2026 - Present</p>
+                    <p className="text-white font-bold text-sm">Frontend Developer Intern</p>
+                    <p className="text-gray-400 text-sm">Unified Mentor · Oct 2025 - Jan 2026</p>
                   </div>
                   <div>
                     <p className="text-white font-bold text-sm">Freelance Web Developer</p>

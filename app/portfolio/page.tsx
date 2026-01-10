@@ -211,23 +211,28 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-black mb-8">Experience</h2>
           <div className="space-y-10">
-            {/* Unified Mentor */}
+             {/* Knowledge Builder - Smartly */}
             <div className="border-l-2 border-gray-300 pl-6">
               <div className="flex items-start justify-between mb-2">
                 <div>
-                  <h3 className="text-xl font-bold text-black">Frontend Developer Intern</h3>
-                  <p className="text-gray-600">Unified Mentor · Internship</p>
+                  <h3 className="text-xl font-bold text-black">Knowledge Builder</h3>
+                  <p className="text-gray-600">Smartly Creators Program</p>
                 </div>
-                <span className="text-sm text-gray-500 font-mono">Oct 2025 - Jan 2026</span>
+                <span className="text-sm text-gray-500 font-mono">Jan 2026 - Present</span>
               </div>
-              <p className="text-sm text-gray-500 mb-3">Remote · 3 months</p>
+              <p className="text-sm text-gray-500 mb-3">Remote</p>
               <ul className="space-y-2 text-gray-700 text-sm leading-relaxed">
-                <li>• Developing and optimizing responsive web components using the MERN stack, improving UI speed and load efficiency across test builds by ~25%</li>
-                <li>• Collaborating with mentors and peers on real-world client projects, following Agile sprints and Git-based version control</li>
-                <li>• Focused on implementing clean design systems, accessibility, and component reusability to enhance front-end performance</li>
+                <li>• Engaged with fellow tech creators, Topic Moderators, and Topic Lead by participating in reviews, challenges, and community activities</li>
+                <li>• Improved my content through structured feedback and best practices</li>
+                <li>• Contributed to GitHub and shared knowledge with the community</li>
+                <li>• Wrote and reviewed knowledge articles, shared best practices, and showcased contributions on GitHub</li>
+                <li>• Focused on security, structured content, and community visibility while improving overall content quality</li>
               </ul>
+              <p className="text-sm text-gray-600 mt-3 italic">Learn Git, GitHub, and content writing best practices. Showcase your contributions on GitHub and your resume.</p>
             </div>
 
+
+           
             {/* Creator and Author */}
             <div className="border-l-2 border-gray-300 pl-6">
               <div className="flex items-start justify-between mb-2">
@@ -250,44 +255,25 @@ export default function Portfolio() {
               </ul>
               <p className="text-sm text-gray-600 mt-3 italic">Focus: Writing, Technical Communication, AI/ML Simplification, UX for Content, Visual Design, Personal Branding</p>
             </div>
-
-            {/* Knowledge Builder - Smartly */}
+             {/* Unified Mentor */}
             <div className="border-l-2 border-gray-300 pl-6">
               <div className="flex items-start justify-between mb-2">
                 <div>
-                  <h3 className="text-xl font-bold text-black">Knowledge Builder</h3>
-                  <p className="text-gray-600">Smartly Creators Program</p>
+                  <h3 className="text-xl font-bold text-black">Frontend Developer Intern</h3>
+                  <p className="text-gray-600">Unified Mentor · Internship</p>
                 </div>
-                <span className="text-sm text-gray-500 font-mono">Jan 2026 - Present</span>
+                <span className="text-sm text-gray-500 font-mono">Oct 2025 - Jan 2026</span>
               </div>
-              <p className="text-sm text-gray-500 mb-3">Remote</p>
+              <p className="text-sm text-gray-500 mb-3">Remote · 3 months</p>
               <ul className="space-y-2 text-gray-700 text-sm leading-relaxed">
-                <li>• Engaged with fellow tech creators, Topic Moderators, and Topic Lead by participating in reviews, challenges, and community activities</li>
-                <li>• Improved my content through structured feedback and best practices</li>
-                <li>• Contributed to GitHub and shared knowledge with the community</li>
-                <li>• Wrote and reviewed knowledge articles, shared best practices, and showcased contributions on GitHub</li>
-                <li>• Focused on security, structured content, and community visibility while improving overall content quality</li>
-              </ul>
-              <p className="text-sm text-gray-600 mt-3 italic">Learn Git, GitHub, and content writing best practices. Showcase your contributions on GitHub and your resume.</p>
-            </div>
-
-            {/* Knowledge Builder - Smartly */}
-            <div className="border-l-2 border-gray-300 pl-6">
-              <div className="flex items-start justify-between mb-2">
-                <div>
-                  <h3 className="text-xl font-bold text-black">Knowledge Builder</h3>
-                  <p className="text-gray-600">Smartly · Creator Program</p>
-                </div>
-                <span className="text-sm text-gray-500 font-mono">Jan 2026 - Present</span>
-              </div>
-              <p className="text-sm text-gray-500 mb-3">Remote</p>
-              <ul className="space-y-2 text-gray-700 text-sm leading-relaxed">
-                <li>• Engaged with fellow tech creators, Topic Moderators, and Topic Lead by participating in reviews, challenges, and community activities</li>
-                <li>• Improved content through structured feedback and best practices</li>
-                <li>• Contributed to GitHub and shared knowledge with the community</li>
+                <li>• Developing and optimizing responsive web components using the MERN stack, improving UI speed and load efficiency across test builds by ~25%</li>
+                <li>• Collaborating with mentors and peers on real-world client projects, following Agile sprints and Git-based version control</li>
+                <li>• Focused on implementing clean design systems, accessibility, and component reusability to enhance front-end performance</li>
               </ul>
             </div>
 
+
+           
             {/* Freelance Web Developer */}
             <div className="border-l-2 border-gray-300 pl-6">
               <div className="flex items-start justify-between mb-2">
