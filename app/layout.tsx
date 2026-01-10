@@ -20,6 +20,26 @@ export default function RootLayout({
   return (
     <html lang="en" className="antialiased scroll-smooth">
       <head>
+        {/* <!-- Primary Meta Tags --> */}
+<title>Zainab Shujat — Creative Developer</title>
+<meta name="title" content="Zainab Shujat — Creative Developer" />
+<meta name="description" content="Building worlds that work. Developer, designer, and maker of thoughtful things." />
+
+{/* <!-- Open Graph / Facebook --> */}
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://zainabshujat.dev/" />
+<meta property="og:title" content="Zainab Shujat — Creative Developer" />
+<meta property="og:description" content="Building worlds that work. Developer, designer, and maker of thoughtful things." />
+<meta property="og:image" content="https://zainabshujat.dev/og-image.png" />
+
+{/* <!-- X (Twitter) --> */}
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://zainabshujat.dev/" />
+<meta property="twitter:title" content="Zainab Shujat — Creative Developer" />
+<meta property="twitter:description" content="Building worlds that work. Developer, designer, and maker of thoughtful things." />
+<meta property="twitter:image" content="https://zainabshujat.dev/og-image.png" />
+
+{/* <!-- Meta Tags Generated with https://metatags.io --> */}
         <link rel="canonical" href="https://zainabshujat.dev/" />
         <meta name="google-site-verification" content="8B-z-nY8ZpOg1qgralDyM2dsUQz73RRDfN0E7KS-7Nc" />
       </head>
