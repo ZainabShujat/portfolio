@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  const baseUrl = 'https://zainabshujat.vercel.app';
+  const baseUrl = 'https://zainabshujat.dev';
 
   // List your main pages
   const staticPages = [
